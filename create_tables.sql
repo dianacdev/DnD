@@ -40,14 +40,6 @@ CREATE TABLE race(
     PRIMARY KEY (race_type)
 );
 
--- Inventory Table
-CREATE TABLE inventory(
-    inventory_id INT NOT NULL,
-    size INT,
-    item_weight INT,
-    PRIMARY KEY (inventory_id)
-);
-
 -- Creating the Background Table
 CREATE TABLE background(
     background_type INT NOT NULL,
@@ -58,10 +50,38 @@ CREATE TABLE background(
 );
 
 -- Creating the Bonuses Table
+-- CREATE TABLE bonus(
+
+-- );
 
 -- Creating the Stats Table
+-- CREATE TABLE stats(
 
--- Creating the Skills Table
+-- );
+
+-- Creating the character_skills Table
+-- CREATE TABLE character_skills(
+
+-- );
+
+-- Creating the skill Table
+CREATE TABLE skills(
+    skill_id INT NOT NULL,
+    skill_name VARCHAR(255),
+    skill_desc VARCHAR(255),
+    PRIMARY KEY (skill_id)
+);
+
+-- Creating the items Table
+-- This table holds all the items that can be obtained in DnD
+CREATE TABLE items(
+    item_id INT NOT NULL,
+    item_name VARCHAR(255),
+    item_desc VARCHAR(255),
+    item_weight DECIMAL,
+    item_size INT,
+    PRIMARY KEY (item_id)
+);
 
 -- Creating the Character Info Table
 CREATE TABLE character_info(
@@ -71,7 +91,6 @@ CREATE TABLE character_info(
     race_type INT,
     class_type INT,
     exp_level_type INT,
-    inventory_id INT,
     party_id INT,
     alignment_type INT,
     background_type INT,
@@ -86,10 +105,23 @@ CREATE TABLE character_info(
     FOREIGN KEY (race_type) REFERENCES race(race_type),
     FOREIGN KEY (class_type) REFERENCES class(class_type),
     FOREIGN KEY (exp_level_type) REFERENCES exp_level(exp_level_type),
-    FOREIGN KEY (inventory_id) REFERENCES inventory(inventory_id),
     FOREIGN KEY (party_id) REFERENCES party(party_id),
     FOREIGN KEY (alignment_type) REFERENCES alignment(alignment_type),
     FOREIGN KEY (background_type) REFERENCES background(background_type)
+);
+
+-- Inventory Table
+CREATE TABLE inventory(
+    inventory_id INT NOT NULL,
+    character_id INT NOT NULL,
+    item_id INT,
+    item_size INT,
+    item_weight DECIMAL,
+    PRIMARY KEY (inventory_id),
+    FOREIGN KEY (character_id) REFERENCES character_info(character_id),
+    FOREIGN KEY (item_id) REFERENCES items(item_id),
+    FOREIGN KEY (item_size) REFERENCES items(item_size),
+    FOREIGN KEY (item_weight) REFERENCES items(item_weight)
 );
 
 -- Link to Naming Conventions for MySQL (https://medium.com/@centizennationwide/mysql-naming-conventions-e3a6f6219efe)
