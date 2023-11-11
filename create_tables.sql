@@ -10,8 +10,8 @@ CREATE TABLE party(
 -- Creating the Alignment Table
 CREATE TABLE alignment(
     alignment_type INT NOT NULL,
-    alignment_name VARCHAR(255),
-    alignment_desc VARCHAR(255),
+    alignment_name VARCHAR(50),
+    alignment_desc VARCHAR(550),
     PRIMARY KEY (alignment_type)
 );
 
