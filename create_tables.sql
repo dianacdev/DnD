@@ -1,6 +1,6 @@
 -- Creating the Party Table
 CREATE TABLE party(
-    party_id INT NOT NULL,
+    party_id INT NOT NULL AUTO_INCREMENT,
     party_size INT,
     party_name VARCHAR(255),
     party_desc VARCHAR(255),
@@ -9,7 +9,7 @@ CREATE TABLE party(
 
 -- Creating the Alignment Table
 CREATE TABLE alignment(
-    alignment_type INT NOT NULL,
+    alignment_type INT NOT NULL AUTO_INCREMENT,
     alignment_name VARCHAR(50),
     alignment_desc VARCHAR(550),
     PRIMARY KEY (alignment_type)
@@ -18,7 +18,7 @@ CREATE TABLE alignment(
 -- Creating the Exp_Levels Table
 -- This table is the levels and experience needed to be a certain level
 CREATE TABLE exp_level(
-    exp_level_type INT NOT NULL,
+    exp_level_type INT NOT NULL AUTO_INCREMENT,
     exp_level INT,
     experience INT,
     PRIMARY KEY (exp_level_type)
@@ -26,15 +26,18 @@ CREATE TABLE exp_level(
 
 -- Creating the Class Table
 CREATE TABLE class(
-    class_type INT NOT NULL,
+    class_type INT NOT NULL AUTO_INCREMENT,
     class_name VARCHAR(255),
     class_desc VARCHAR(255),
+    hit_die VARCHAR(3),
+    primary_ability VARCHAR(255),
+    class_saves VARCHAR(255),
     PRIMARY KEY (class_type)
 );
 
 -- Creating the Race Table
 CREATE TABLE race(
-    race_type INT NOT NULL,
+    race_type INT NOT NULL AUTO_INCREMENT,
     race_name VARCHAR(255),
     race_desc VARCHAR(255),
     PRIMARY KEY (race_type)
@@ -42,7 +45,7 @@ CREATE TABLE race(
 
 -- Creating the Background Table
 CREATE TABLE background(
-    background_type INT NOT NULL,
+    background_type INT NOT NULL AUTO_INCREMENT,
     background_name VARCHAR(255),
     background_desc VARCHAR(255),
     proficiency_desc VARCHAR(255), 
@@ -62,7 +65,7 @@ CREATE TABLE background(
 
 -- Creating the skill Table
 CREATE TABLE skills(
-    skill_id INT NOT NULL,
+    skill_id INT NOT NULL AUTO_INCREMENT,
     skill_name VARCHAR(255),
     skill_desc VARCHAR(255),
     PRIMARY KEY (skill_id)
@@ -71,18 +74,18 @@ CREATE TABLE skills(
 -- Creating the items Table
 -- This table holds all the items that can be obtained in DnD
 CREATE TABLE items(
-    item_id INT NOT NULL,
+    item_id INT NOT NULL AUTO_INCREMENT,
     item_name VARCHAR(255),
     item_desc VARCHAR(255),
     item_weight DECIMAL,
-    item_size INT,
+    item_cost DECIMAL,
     PRIMARY KEY (item_id)
 );
 
 -- Creating the Character Info Table
 CREATE TABLE character_info(
     -- character_id is Unique and the Primary key for this table
-    character_id INT NOT NULL,
+    character_id INT NOT NULL AUTO_INCREMENT,
     -- Foreign Keys for this table
     race_type INT,
     class_type INT,
@@ -108,7 +111,7 @@ CREATE TABLE character_info(
 
 -- Inventory Table
 CREATE TABLE inventory(
-	inventory_id INT NOT NULL,
+	inventory_id INT NOT NULL AUTO_INCREMENT,
     character_id INT,
     item_id INT,
     PRIMARY KEY (inventory_id),
@@ -119,7 +122,7 @@ CREATE TABLE inventory(
 -- Creating the character_skills Table
 -- This table works as the link between all known skills and the skills a character
 CREATE TABLE character_skills(
-    character_skill_id INT NOT NULL,
+    character_skill_id INT NOT NULL AUTO_INCREMENT,
     skill_id INT,
     character_id INT,
     PRIMARY KEY (character_skill_id),
