@@ -10,8 +10,8 @@ CREATE TABLE party(
 -- Creating the Alignment Table
 CREATE TABLE alignment(
     alignment_type INT NOT NULL,
-    alignment_name VARCHAR(255),
-    alignment_desc VARCHAR(255),
+    alignment_name VARCHAR(50),
+    alignment_desc VARCHAR(550),
     PRIMARY KEY (alignment_type)
 );
 
@@ -59,10 +59,6 @@ CREATE TABLE background(
 
 -- );
 
--- Creating the character_skills Table
--- CREATE TABLE character_skills(
-
--- );
 
 -- Creating the skill Table
 CREATE TABLE skills(
@@ -112,16 +108,22 @@ CREATE TABLE character_info(
 
 -- Inventory Table
 CREATE TABLE inventory(
-    inventory_id INT NOT NULL,
-    character_id INT NOT NULL,
+	inventory_id INT NOT NULL,
+    character_id INT,
     item_id INT,
-    item_size INT,
-    item_weight DECIMAL,
     PRIMARY KEY (inventory_id),
     FOREIGN KEY (character_id) REFERENCES character_info(character_id),
-    FOREIGN KEY (item_id) REFERENCES items(item_id),
-    FOREIGN KEY (item_size) REFERENCES items(item_size),
-    FOREIGN KEY (item_weight) REFERENCES items(item_weight)
+    FOREIGN KEY (item_id) REFERENCES items(item_id)
 );
 
+-- Creating the character_skills Table
+-- This table works as the link between all known skills and the skills a character
+CREATE TABLE character_skills(
+    character_skill_id INT NOT NULL,
+    skill_id INT,
+    character_id INT,
+    PRIMARY KEY (character_skill_id),
+    FOREIGN KEY (skill_id) REFERENCES skills(skill_id),
+    FOREIGN KEY (character_id) REFERENCES character_info(character_id)
+);
 -- Link to Naming Conventions for MySQL (https://medium.com/@centizennationwide/mysql-naming-conventions-e3a6f6219efe)
