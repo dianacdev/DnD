@@ -19,8 +19,8 @@ CREATE TABLE alignment(
 -- This table is the levels and experience needed to be a certain level
 CREATE TABLE exp_level(
     exp_level_type SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-    exp_level SMALLINT UNSIGNED NOT NULL,
-    experience SMALLINT UNSIGNED NOT NULL,
+    exp_level SMALLINT UNSIGNED NOT NULL DEFAULT 1,
+    experience SMALLINT UNSIGNED NOT NULL DEFAULT 0,
     PRIMARY KEY (exp_level_type)
 );
 
@@ -51,16 +51,6 @@ CREATE TABLE background(
     proficiency_desc VARCHAR(255), 
     PRIMARY KEY (background_type)
 );
-
--- Creating the Bonuses Table
--- CREATE TABLE bonus(
-
--- );
-
--- Creating the Stats Table
--- CREATE TABLE stats(
-
--- );
 
 
 -- Creating the skill Table
