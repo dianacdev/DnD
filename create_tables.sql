@@ -79,11 +79,11 @@ CREATE TABLE character_info(
     character_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
     -- Foreign Keys for this table
     race_type SMALLINT UNSIGNED NOT NULL,
-    class_type INT NOT NULL,
-    exp_level_type INT NOT NULL,
-    party_id INT,
-    alignment_type INT NOT NULL,
-    background_type INT NOT NULL,
+    class_type SMALLINT UNSIGNED NOT NULL,
+    exp_level_type SMALLINT UNSIGNED NOT NULL,
+    party_id SMALLINT UNSIGNED,
+    alignment_type SMALLINT UNSIGNED NOT NULL,
+    background_type SMALLINT UNSIGNED NOT NULL,
     -- Values only used by this table
     character_name VARCHAR(50),
     age INT NOT NULL,
