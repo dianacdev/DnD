@@ -3,8 +3,8 @@ CREATE TABLE party(
     party_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
     party_size INT NOT NULL,
     party_name VARCHAR(100) NOT NULL,
-    dungeon_master VARCHAR(50) NOT NULL
-    party_desc VARCHAR(255)
+    dungeon_master VARCHAR(50) NOT NULL,
+    party_desc VARCHAR(255),
     PRIMARY KEY (party_id)
 );
 
@@ -68,8 +68,8 @@ CREATE TABLE items(
     item_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
     item_name VARCHAR(50) NOT NULL,
     item_desc VARCHAR(255),
-    item_weight DECIMAL NOT NULL,
-    item_cost DECIMAL NOT NULL,
+    item_weight DECIMAL (4,1) NOT NULL,
+    item_cost DECIMAL (5,2) NOT NULL,
     PRIMARY KEY (item_id)
 );
 
@@ -78,19 +78,19 @@ CREATE TABLE character_info(
     -- character_id is Unique and the Primary key for this table
     character_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
     -- Foreign Keys for this table
-    race_type INT NOT NULL,
-    class_type INT NOT NULL,
-    exp_level_type INT NOT NULL,
-    party_id INT,
-    alignment_type INT NOT NULL,
-    background_type INT NOT NULL,
+    race_type SMALLINT UNSIGNED NOT NULL,
+    class_type SMALLINT UNSIGNED NOT NULL,
+    exp_level_type SMALLINT UNSIGNED NOT NULL,
+    party_id SMALLINT UNSIGNED,
+    alignment_type SMALLINT UNSIGNED NOT NULL,
+    background_type SMALLINT UNSIGNED NOT NULL,
     -- Values only used by this table
     character_name VARCHAR(50),
     age INT NOT NULL,
     experience INT NOT NULL,
-    height DECIMAL NOT NULL,
-    weight DECIMAL NOT NULL,
-    carry_capacity DECIMAL NOT NULL,
+    height DECIMAL (4,1) NOT NULL,
+    weight DECIMAL (4,1) NOT NULL,
+    carry_capacity DECIMAL (4,1) NOT NULL,
 
     PRIMARY KEY (character_id),
     FOREIGN KEY (race_type) REFERENCES race(race_type),
