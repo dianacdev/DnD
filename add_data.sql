@@ -1,7 +1,7 @@
 --insert data into tables
 
 
-INSERT INTO class (class_name, class_desc, hit_die, primary_ability, class_saves) --insert 10 classes
+INSERT INTO class (class_name, class_desc, hit_die, primary_ability, class_saves) -- insert 10 classes
 VALUES
   ('Barbarian', 'Masters of the wild, relying on primal instincts and brute strength.', 'd12', 'Strength', 'Strength, Constitution'),
   ('Bard', 'Versatile performers and magic users, weaving spells with musical talents.', 'd8', 'Charisma', 'Dexterity, Charisma'),
@@ -16,7 +16,7 @@ VALUES
 
 
 
-insert into alignment (alignment_name, alignment_desc) --insert the 9 alignments and descriptions into alignment table
+insert into alignment (alignment_name, alignment_desc) -- insert the 9 alignments and descriptions into alignment table
 values ('Lawful Good','Characters who are lawful good combine a commitment to oppose evil with the discipline to 
 fight relentlessly. They tell the truth, keep their word, respect authority, honor tradition, and judge those who fall short of their duties.'),
 ('Neutral Good','Neutral good characters do the best they can to help others according to their needs. 
@@ -36,7 +36,7 @@ They are often willing to harm others to achieve their own ends."),
 ('Chaotic Evil', 'Chaotic evil characters are motivated by the desire for personal power and pleasure. 
 They are often violent and unpredictable, reveling in the chaos they create.');
 
-INSERT INTO race (race_name, race_desc) --insert 10 races
+INSERT INTO race (race_name, race_desc) -- insert 10 races
 VALUES
   ('Human', 'Versatile and adaptable, humans are found in almost every corner of the world.'),
   ('Elf', 'Elegant and long-lived, elves are often attuned to magic and the natural world.'),
@@ -49,7 +49,7 @@ VALUES
   ('Dragonborn', 'Descendants of dragons, dragonborn have draconic features and breath weapons.'),
   ('Aasimar', 'Blessed with celestial blood, aasimar radiate goodness and possess divine abilities.');
 
-INSERT INTO items (item_name, item_desc, item_weight, item_cost) --insert 30 itmes
+INSERT INTO items (item_name, item_desc, item_weight, item_cost) -- insert 30 itmes
 VALUES
   ('Longsword', 'A versatile weapon with a keen edge.', 3.0, 15.0),
   ('Healing Potion', 'Restores hit points when consumed.', 0.5, 50.0),
@@ -85,7 +85,7 @@ VALUES
   ('Spear', 'A simple melee weapon with a thrown option.', 3.0, 1.0);
 
 
-INSERT INTO skills (skill_name, skill_desc) --insert 20 skills
+INSERT INTO skills (skill_name, skill_desc) -- insert 20 skills
 VALUES
   ('Acrobatics', 'The ability to perform feats of balance and agility.'),
   ('Animal Handling', 'The skill of calming or controlling animals.'),
@@ -109,7 +109,7 @@ VALUES
   ('Alchemy', 'Knowledge and skill in the creation of magical and alchemical substances.');
 
 
-INSERT INTO background (background_name, background_desc, proficiency_desc)
+INSERT INTO background (background_name, background_desc, proficiency_desc) -- insert 20 possible character backgrounds
 VALUES
   ('Hermit', 'You lived a life of seclusion, seeking spiritual enlightenment or divine truths.', 'Skill Proficiencies: Medicine, Religion'),
   ('Merchant', 'You are a skilled trader, bartering goods and negotiating deals for profit.', 'Skill Proficiencies: Insight, Persuasion'),
