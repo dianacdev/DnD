@@ -109,4 +109,26 @@ VALUES
   ('Alchemy', 'Knowledge and skill in the creation of magical and alchemical substances.');
 
 
+INSERT INTO background (background_name, background_desc, proficiency_desc)
+VALUES
+  ('Hermit', 'You lived a life of seclusion, seeking spiritual enlightenment or divine truths.', 'Skill Proficiencies: Medicine, Religion'),
+  ('Merchant', 'You are a skilled trader, bartering goods and negotiating deals for profit.', 'Skill Proficiencies: Insight, Persuasion'),
+  ('Knight', 'You are a noble warrior, sworn to uphold the principles of chivalry and protect the realm.', 'Skill Proficiencies: Athletics, Persuasion'),
+  ('Sailor', 'You are an experienced sailor or pirate, at home on the open seas.', 'Skill Proficiencies: Athletics, Perception'),
+  ('Haunted One', 'You have a dark and mysterious past, haunted by traumatic events or supernatural encounters.', 'Skill Proficiencies: Intimidation, Survival'),
+  ('Farmer', 'You come from an agricultural background, skilled in tending to crops and animals.', 'Skill Proficiencies: Animal Handling, Nature'),
+  ('Artisan', 'You are a skilled craftsman, creating beautiful and functional objects through your craft.', 'Skill Proficiencies: Insight, Craftsmanship (choose one)'),
+  ('Scholar', 'You have dedicated your life to the pursuit of knowledge, studying various subjects in depth.', 'Skill Proficiencies: Arcana, History'),
+  ('Bounty Hunter', 'You track down and capture or eliminate individuals for a reward, working outside the law.', 'Skill Proficiencies: Investigation, Survival'),
+  ('Diplomat', 'You are skilled in negotiation and diplomacy, often working as a mediator or ambassador.', 'Skill Proficiencies: Insight, Persuasion'),
+  ('Acolyte', 'You have spent your life in service to a temple, learning sacred rites and rituals.', 'Skill Proficiencies: Insight, Religion'),
+  ('Folk Hero', 'You come from a humble social rank, but you were a person of importance in your home village or town.', 'Skill Proficiencies: Animal Handling, Survival'),
+  ('Sage', 'You are a scholar, researcher, or academic, with a keen mind for information.', 'Skill Proficiencies: Arcana, History'),
+  ('Criminal', 'You lived a life of crime, whether as a thief, smuggler, or enforcer.', 'Skill Proficiencies: Deception, Stealth'),
+  ('Soldier', 'You are a veteran of war, skilled in battle and tactics.', 'Skill Proficiencies: Athletics, Intimidation'),
+  ('Entertainer', 'You are a performer, skilled in various forms of entertainment.', 'Skill Proficiencies: Acrobatics, Performance'),
+  ('Outlander', 'You grew up in the wilds, far from civilization, and are at home in nature.', 'Skill Proficiencies: Athletics, Survival'),
+  ('Guild Artisan', 'You are a member of an artisan’s guild, skilled in a particular craft or trade.', 'Skill Proficiencies: Insight, Persuasion'),
+  ('Noble', 'You were born into a noble family and raised in a world of privilege and power.', 'Skill Proficiencies: History, Persuasion'),
+  ('Urchin', 'You grew up on the streets, making a living by picking pockets and relying on your wits.', 'Skill Proficiencies: Sleight of Hand, Stealth');
 
