@@ -3,7 +3,8 @@ CREATE TABLE party(
     party_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
     party_size INT NOT NULL,
     party_name VARCHAR(100) NOT NULL,
-    party_desc VARCHAR(255),
+    dungeon_master VARCHAR(50) NOT NULL
+    party_desc VARCHAR(255)
     PRIMARY KEY (party_id)
 );
 
@@ -88,7 +89,8 @@ CREATE TABLE character_info(
     age INT NOT NULL,
     experience INT NOT NULL,
     height DECIMAL NOT NULL,
-    weight_capacity DECIMAL NOT NULL,
+    weight DECIMAL NOT NULL,
+    carry_capacity DECIMAL NOT NULL,
 
     PRIMARY KEY (character_id),
     FOREIGN KEY (race_type) REFERENCES race(race_type),
