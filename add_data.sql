@@ -1,4 +1,4 @@
---insert data into tables
+-- insert data into tables
 
 
 INSERT INTO class (class_name, class_desc, hit_die, primary_ability, class_saves) -- insert 10 classes
@@ -51,38 +51,38 @@ VALUES
 
 INSERT INTO items (item_name, item_desc, item_weight, item_cost) -- insert 30 itmes
 VALUES
-  ('Longsword', 'A versatile weapon with a keen edge.', 3.0, 15.0),
-  ('Healing Potion', 'Restores hit points when consumed.', 0.5, 50.0),
-  ('Leather Armor', 'Light and flexible armor made from animal hides.', 10.0, 10.0),
-  ('Spellbook', 'A book containing magical spells for a wizard.', 2.0, 30.0),
-  ('Shortbow', 'A simple ranged weapon for delivering arrows.', 2.0, 25.0),
-  ('Quiver of Arrows', 'Holds arrows for a bow.', 1.0, 5.0),
-  ('Potion of Invisibility', 'Temporarily makes the consumer invisible.', 0.5, 150.0),
-  ('Plate Mail', 'Heavy and protective armor for warriors.', 65.0, 1500.0),
-  ('Ring of Protection', 'Enhances the wearer''s defenses.', 0.1, 200.0),
-  ('Amulet of Health', 'Increases the wearer''s constitution.', 0.2, 300.0),
-  ('Warhammer', 'A heavy weapon for smashing foes.', 5.0, 10.0),
-  ('Wand of Magic Missiles', 'A wand that can cast magic missile spells.', 0.2, 100.0),
-  ('Chain Mail', 'Medium-weight armor made of interlocking metal rings.', 55.0, 75.0),
-  ('Scroll of Identify', 'A scroll that can identify the magical properties of items.', 0.1, 50.0),
-  ('Dagger', 'A versatile and easily concealable weapon.', 1.0, 2.0),
-  ('Bracers of Defense', 'Magical bracers that enhance the wearer''s AC.', 0.5, 400.0),
-  ('Greatsword', 'A two-handed weapon with a massive blade.', 6.0, 50.0),
-  ('Backpack', 'A sturdy backpack for carrying equipment.', 2.0, 5.0),
-  ('Cloak of Elvenkind', 'A cloak that grants the wearer improved stealth abilities.', 1.0, 300.0),
-  ('Scroll of Fireball', 'A scroll containing the fireball spell.', 0.1, 75.0),
-  ('Rapier', 'A slender and elegant weapon used for fencing.', 2.0, 25.0),
-  ('Wand of Lightning Bolts', 'A wand that can cast lightning bolt spells.', 0.3, 400.0),
-  ('Chain Shirt', 'Light armor made of interlocking metal rings.', 25.0, 50.0),
-  ('Gloves of Thievery', 'Magical gloves that enhance the wearer''s sleight of hand.', 0.2, 150.0),
-  ('Sling', 'A simple ranged weapon for hurling stones.', 1.0, 1.0),
-  ('Scale Mail', 'Medium-weight armor made of overlapping metal scales.', 45.0, 50.0),
-  ('Wand of Frost', 'A wand that can cast frost-related spells.', 0.3, 350.0),
-  ('Helm of Comprehending Languages', 'A helm that allows the wearer to understand any language.', 1.0, 200.0),
-  ('Grappling Hook', 'A tool for scaling walls or climbing.', 4.0, 2.0),
-  ('Cloak of Resistance', 'A cloak that provides resistance to various forms of harm.', 0.5, 300.0),
-  ('Potion of Giant Strength', 'Temporarily increases the consumer''s strength to giant levels.', 0.5, 100.0),
-  ('Spear', 'A simple melee weapon with a thrown option.', 3.0, 1.0);
+  ("Longsword", "A versatile weapon with a keen edge.", 3.0, 15.0),
+  ("Healing Potion", "Restores hit points when consumed.", 0.5, 50.0),
+  ("Leather Armor", "Light and flexible armor made from animal hides.", 10.0, 10.0),
+  ("Spellbook", "A book containing magical spells for a wizard.", 2.0, 30.0),
+  ("Shortbow", "A simple ranged weapon for delivering arrows.", 2.0, 25.0),
+  ("Quiver of Arrows", "Holds arrows for a bow.", 1.0, 5.0),
+  ("Potion of Invisibility", "Temporarily makes the consumer invisible.", 0.5, 150.0),
+  ("Plate Mail", "Heavy and protective armor for warriors.", 65.0, 1500.0),
+  ("Ring of Protection", "Enhances the wearer's defenses.", 0.1, 200.0),
+  ("Amulet of Health", "Increases the wearer's constitution.", 0.2, 300.0),
+  ("Warhammer", "A heavy weapon for smashing foes.", 5.0, 10.0),
+  ("Wand of Magic Missiles", "A wand that can cast magic missile spells.", 0.2, 100.0),
+  ("Chain Mail", "Medium-weight armor made of interlocking metal rings.", 55.0, 75.0),
+  ("Scroll of Identify", "A scroll that can identify the magical properties of items.", 0.1, 50.0),
+  ("Dagger", "A versatile and easily concealable weapon.", 1.0, 2.0),
+  ("Bracers of Defense", "Magical bracers that enhance the wearer's AC.", 0.5, 400.0),
+  ("Greatsword", "A two-handed weapon with a massive blade.", 6.0, 50.0),
+  ("Backpack", "A sturdy backpack for carrying equipment.", 2.0, 5.0),
+  ("Cloak of Elvenkind", "A cloak that grants the wearer improved stealth abilities.", 1.0, 300.0),
+  ("Scroll of Fireball", "A scroll containing the fireball spell.", 0.1, 75.0),
+  ("Rapier", "A slender and elegant weapon used for fencing.", 2.0, 25.0),
+  ("Wand of Lightning Bolts", "A wand that can cast lightning bolt spells.", 0.3, 400.0),
+  ("Chain Shirt", "Light armor made of interlocking metal rings.", 25.0, 50.0),
+  ("Gloves of Thievery", "Magical gloves that enhance the wearer's sleight of hand.", 0.2, 150.0),
+  ("Sling", "A simple ranged weapon for hurling stones.", 1.0, 1.0),
+  ("Scale Mail", "Medium-weight armor made of overlapping metal scales.", 45.0, 50.0),
+  ("Wand of Frost", "A wand that can cast frost-related spells.", 0.3, 350.0),
+  ("Helm of Comprehending Languages", "A helm that allows the wearer to understand any language.", 1.0, 200.0),
+  ("Grappling Hook", "A tool for scaling walls or climbing.", 4.0, 2.0),
+  ("Cloak of Resistance", "A cloak that provides resistance to various forms of harm.", 0.5, 300.0),
+  ("Potion of Giant Strength", "Temporarily increases the consumer''s strength to giant levels.", 0.5, 100.0),
+  ("Spear", "A simple melee weapon with a thrown option.", 3.0, 1.0);
 
 
 INSERT INTO skills (skill_name, skill_desc) -- insert 20 skills
@@ -132,3 +132,18 @@ VALUES
   ('Noble', 'You were born into a noble family and raised in a world of privilege and power.', 'Skill Proficiencies: History, Persuasion'),
   ('Urchin', 'You grew up on the streets, making a living by picking pockets and relying on your wits.', 'Skill Proficiencies: Sleight of Hand, Stealth');
 
+-- Inserting 12 experience levels
+INSERT INTO exp_level (exp_level, experience)
+VALUES 
+  (1,0),
+  (2, 5000),
+  (3, 15000),
+  (4, 30000),
+  (5, 50000),
+  (6, 75000),
+  (7, 105000),
+  (8, 140000),
+  (9, 180000),
+  (10, 225000),
+  (11, 275000),
+  (12, 330000);

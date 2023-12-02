@@ -21,7 +21,7 @@ CREATE TABLE alignment(
 CREATE TABLE exp_level(
     exp_level_type SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
     exp_level SMALLINT UNSIGNED NOT NULL DEFAULT 1,
-    experience SMALLINT UNSIGNED NOT NULL DEFAULT 0,
+    experience MEDIUMINT UNSIGNED NOT NULL DEFAULT 0,
     PRIMARY KEY (exp_level_type)
 );
 
@@ -69,7 +69,7 @@ CREATE TABLE items(
     item_name VARCHAR(50) NOT NULL,
     item_desc VARCHAR(255),
     item_weight DECIMAL (4,1) NOT NULL,
-    item_cost DECIMAL (5,2) NOT NULL,
+    item_cost DECIMAL (12,2) NOT NULL,
     PRIMARY KEY (item_id)
 );
 
