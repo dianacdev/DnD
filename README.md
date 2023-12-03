@@ -1,5 +1,12 @@
 # DnD
+
 Dungeons And Dragons SQL Database
+
+- User-friendly, streamline character creation and management
+- Consolidates character and campaign data into one database
+- No need to carry character sheets
+- Provide D&D enthusiasts with access to consistent data, simple character tracking, and easy character updating
+- Make the Dungeons and Dragons experience more efficient, organized, and convenient.
 
 ## Getting Started
 
