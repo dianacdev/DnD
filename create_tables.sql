@@ -1,7 +1,7 @@
 -- Creating the Party Table
 CREATE TABLE party(
     party_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-    party_size INT NOT NULL,
+    party_size SMALLINT UNSIGNED NOT NULL,
     party_name VARCHAR(100) NOT NULL,
     dungeon_master VARCHAR(50) NOT NULL,
     party_desc VARCHAR(255),
