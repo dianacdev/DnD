@@ -147,3 +147,16 @@ VALUES
   (10, 225000),
   (11, 275000),
   (12, 330000);
+
+-- Inserting a Party
+INSERT INTO party(party_size,party_name,dungeon_master,party_desc)
+VALUES
+(4,"Dummy Party","Jack Johnson","A party searches the land of fae to get there attention back."),
+(3,"Fighters 4 Life","Mr.Clean","A group of underground fighters must rebel against the royal crown."),
+(5,"Honorable Hand","Mr.Clean","A party of palladins and rouges, in the search for the Honorable Hand"),
+(4,"Vigilant Guard","Saint Nicholas","A group of theifs, must go against the Vigilant Guard to heist the greatest treasure of all time.");
+
+-- Inserting a Player Character
+INSERT INTO character_info(race_type, class_type, exp_level_type, party_id, alignment_type, background_type, character_name, age, experience, height, weight, carry_capacity)
+VALUES
+(8,9,3,3,6,9, "Diana The Rouge", 22, 15000, 5.2, 120, 80);
