@@ -159,4 +159,4 @@ VALUES
 -- Inserting a Player Character
 INSERT INTO character_info(race_type, class_type, exp_level_type, party_id, alignment_type, background_type, character_name, age, experience, height, weight, carry_capacity)
 VALUES
-(8,9,3,3,6,9, "Diana The Rouge", 22, 15000, 5.2, 120, 80);
+(8,9,3,3,6,9, "Don Roguers", 22, 15000, 5.2, 120, 80);
