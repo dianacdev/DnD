@@ -159,21 +159,15 @@ VALUES
 -- Inserting 11 Player Characters
 INSERT INTO character_info(race_type, class_type, exp_level_type, party_id, alignment_type, background_type, character_name, age, experience, height, weight, carry_capacity)
 VALUES
-(8, 9, 3, 3, 6, 9, "Don Roguers", 22, 15000, 5.2, 120, 80),
-(6, 6, 1, 1, 1, 11, "Luche Arrelle", 47, 50, 5.4, 145, 90), -- Half-Elf Monk
-(1, 2, 1, 1, 2, 16, "Yaalith Lough", 26, 50, 5.0, 110, 60), -- Human Bard
-(7, 1, 1, 1, 5, 15, "Grem Kol", 31, 50, 5.9, 170, 130), -- Half-Orc Barbarian
-(9, 3, 1, 1, 4, 16, "Juymov Piller", 53, 50, 5.8, 160, 105), -- Dragonborn Cleric
-(3, 5, 4, 2, 3, 15, "Li Mig", 165, 550, 3.8, 70, 85), -- Dwarf Fighter
-(2, 7, 4, 2, 1, 16, "Salo Ogel", 303, 550, 5.5, 120, 100), -- Elf Paladin
-(1, 8, 4, 2, 2, 12, "Gor Aran", 78, 550, 5.8, 160, 105), -- Human Ranger
-(5, 2, 9, 3, 3, 7, "Rask Filipam", 34, 1700, 3.3, 50, 20), -- Gnome Bard
-(10, 7, 9, 3, 4, 16, "Mirviss Dementhil", 38, 1700, 5.8, 160, 120), -- Aasimar Paladin
-(7, 7, 9, 3, 4, 16, "Tik Leveth", 23, 1700, 6.0, 160, 145), -- Half-Orc Paladin
-(5, 9, 9, 3, 4, 16, "Uel Cary", 41, 1700, 3.4, 55, 35), -- Gnome Rogue
-(2, 9, 9, 3, 6, 9, "Aethvir Nerlim", 422, 1700, 5.7, 130, 95), -- Elf Rogue
-(4, 9, 9, 4, 7, 16, "Ourg Rensk", 53, 15000, 4.5, 100, 65), -- Halfling Rogue
-(6, 3, 13, 4, 4, 5, "Vila Nordew", 34, 15000, 5.5, 130, 100), -- Half-Elf Fighter
-(8, 9, 13, 4, 6, 9, "Don Roguers", 22, 15000, 5.2, 120, 80), -- Tiefling Rogue
-(1, 10, 13, 4, 7, 8, "Stovel Pawam", 62, 15000, 5.1, 105, 55) -- Human Sorcerer
+(8, 9, 3, 1, 6, 9, "Don Roguers", 22, 15000, 5.2, 120, 80), -- teifling rouge
+(1, 1, 2, 3, 1, 1, "Charles Gypsy", 12, 18000, 5.0, 120, 80), -- human barbarian
+(2, 2, 1, 2, 2, 3, "Burkley Maverick", 24, 12000, 6.2, 120, 80), -- elf bard
+(9, 3, 4, 2, 3, 4, "Hannah Lucy", 42, 10000, 6.5, 120, 80), -- dragonborn cleric
+(10, 4, 5, 4, 5, 5, "Stella Rose", 30, 50000, 5.5, 120, 80), -- aaismar druid
+(7, 5, 6, 1, 4, 19, "Bannana Ramma", 9, 25000, 5.1, 120, 80), -- half-orc fighter
+(5, 6, 2, 1, 7, 10, "Troy Kenji", 18, 25000, 3.2, 120, 80), -- gnome monk
+(8, 7, 2, 1, 8, 11, "Linda Poliana", 65, 10000, 6.1, 120, 80), -- teifling paladin
+(4, 8, 1, 2, 9, 12, "Maya Darnel", 81, 150000, 4.2, 120, 80), -- halfling ranger
+(6, 10, 12, 3, 1, 6, "Mary Jack", 10, 105000, 5.6, 120, 80), -- half-elf sorcerer
+(3, 3, 10, 3, 2, 17, "Mark Stunner", 74, 115000, 3.2, 120, 80) -- dwarf cleric
 ;
