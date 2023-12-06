@@ -18,7 +18,7 @@ VALUES
 
 insert into alignment (alignment_name, alignment_desc) -- insert the 9 alignments and descriptions into alignment table
 values ('Lawful Good','Characters who are lawful good combine a commitment to oppose evil with the discipline to 
-fight relentlessly. They tell the truth, keep their word, respect authority, honor tradition, and judge those who fall short of their duties.'),
+fight relentlessly. They tell the truth, keep their word, respect authority, honor tradition, analignmentd judge those who fall short of their duties.'),
 ('Neutral Good','Neutral good characters do the best they can to help others according to their needs. 
 They are devoted to helping others and will often work within the system, but they are not afraid to bend or break the law if it serves a greater good.'),
 ('Chaotic Good', 'Chaotic good characters act as their conscience directs, with little regard for what others expect. 
@@ -159,21 +159,21 @@ VALUES
 -- Inserting 11 Player Characters
 INSERT INTO character_info(race_type, class_type, exp_level_type, party_id, alignment_type, background_type, character_name, age, experience, height, weight, carry_capacity)
 VALUES
-(8,9,3,3,6,9, "Don Roguers", 22, 15000, 5.2, 120, 80),
-(6,6,1,1,1,11, "Luche Arrelle", 47, 50, 5.4, 145, 90), -- Half-Elf Monk
-(1,2,1,1,2,16, "Yaalith Lough", 26, 50, 5.0, 110, 60), -- Human Bard
-(7,1,1,1,5,15, "Grem Kol", 31, 50, 5.9, 170, 130), -- Half-Orc Barbarian
-(9,3,1,1,4,16, "Juymov Piller", 53, 50, 5.8, 160, 105), -- Dragonborn Cleric
-(3,5,4,2,3,15, "Li Mig", 165, 550, 3.8, 70, 85), -- Dwarf Fighter
-(2,7,4,2,1,16, "Salo Ogel", 303, 550, 5.5, 120, 100), -- Elf Paladin
-(1,8,4,2,2,12, "Gor Aran", 78, 550, 5.8, 160, 105), -- Human Ranger
-(5,2,9,3,3,7, "Rask Filipam", 34, 1700, 3.3, 50, 20), -- Gnome Bard
-(10,7,9,3,4,16, "Mirviss Dementhil", 38, 1700, 5.8, 160, 120), -- Aasimar Paladin
-(7,7,9,3,4,16, "Tik Leveth", 23, 1700, 6.0, 160, 145), -- Half-Orc Paladin
-(5,9,9,3,4,16, "Uel Cary", 41, 1700, 3.4, 55, 35), -- Gnome Rogue
-(2,9,9,3,6,9, "Aethvir Nerlim", 422, 1700, 5.7, 130, 95), -- Elf Rogue
-(4,9,9,4,7,16, "Ourg Rensk", 53, 15000, 4.5, 100, 65), -- Hafling Rogue
-(6,3,13,4,4,5, "Vila Nordew", 34, 15000, 5.5, 130, 100), -- Half-Elf Fighter
-(8,9,13,4,6,9, "Don Roguers", 22, 15000, 5.2, 120, 80), -- Teifling Rogue
-(1,10,13,4,7,8, "Stovel Pawam", 62, 15000, 5.1, 105, 55) -- Human Sorcerer
+(8, 9, 3, 3, 6, 9, "Don Roguers", 22, 15000, 5.2, 120, 80),
+(6, 6, 1, 1, 1, 11, "Luche Arrelle", 47, 50, 5.4, 145, 90), -- Half-Elf Monk
+(1, 2, 1, 1, 2, 16, "Yaalith Lough", 26, 50, 5.0, 110, 60), -- Human Bard
+(7, 1, 1, 1, 5, 15, "Grem Kol", 31, 50, 5.9, 170, 130), -- Half-Orc Barbarian
+(9, 3, 1, 1, 4, 16, "Juymov Piller", 53, 50, 5.8, 160, 105), -- Dragonborn Cleric
+(3, 5, 4, 2, 3, 15, "Li Mig", 165, 550, 3.8, 70, 85), -- Dwarf Fighter
+(2, 7, 4, 2, 1, 16, "Salo Ogel", 303, 550, 5.5, 120, 100), -- Elf Paladin
+(1, 8, 4, 2, 2, 12, "Gor Aran", 78, 550, 5.8, 160, 105), -- Human Ranger
+(5, 2, 9, 3, 3, 7, "Rask Filipam", 34, 1700, 3.3, 50, 20), -- Gnome Bard
+(10, 7, 9, 3, 4, 16, "Mirviss Dementhil", 38, 1700, 5.8, 160, 120), -- Aasimar Paladin
+(7, 7, 9, 3, 4, 16, "Tik Leveth", 23, 1700, 6.0, 160, 145), -- Half-Orc Paladin
+(5, 9, 9, 3, 4, 16, "Uel Cary", 41, 1700, 3.4, 55, 35), -- Gnome Rogue
+(2, 9, 9, 3, 6, 9, "Aethvir Nerlim", 422, 1700, 5.7, 130, 95), -- Elf Rogue
+(4, 9, 9, 4, 7, 16, "Ourg Rensk", 53, 15000, 4.5, 100, 65), -- Halfling Rogue
+(6, 3, 13, 4, 4, 5, "Vila Nordew", 34, 15000, 5.5, 130, 100), -- Half-Elf Fighter
+(8, 9, 13, 4, 6, 9, "Don Roguers", 22, 15000, 5.2, 120, 80), -- Tiefling Rogue
+(1, 10, 13, 4, 7, 8, "Stovel Pawam", 62, 15000, 5.1, 105, 55) -- Human Sorcerer
 ;
