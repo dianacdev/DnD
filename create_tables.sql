@@ -1,3 +1,7 @@
+-- Create the D&D database
+CREATE DATABASE DndDatabase;
+use DndDatabase;
+
 -- Creating the Party Table
 CREATE TABLE party(
     party_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -52,7 +56,6 @@ CREATE TABLE background(
     proficiency_desc VARCHAR(255), 
     PRIMARY KEY (background_type)
 );
-
 
 -- Creating the skill Table
 CREATE TABLE skills(
